@@ -264,6 +264,30 @@
                     return returnString;
                 };
             });
-        </script> 
+        </script>
+        <script>
+          $(document).ready(function() {
+          
+          $('.dropdown-button').dropdown({
+          inDuration: 300,
+          outDuration: 225,
+          hover: false,
+          gutter: 0,
+           // Activate on hover
+          belowOrigin: true, // Displays dropdown below the button
+          alignment: 'left' // Displays dropdown with edge aligned to the left of button
+          }
+          );
+          
+          $('.modal').modal();
+           $('.fixed-action-btn').floatingActionButton({
+
+
+           hoverEnabled: false
+           
+            });
+
+           });
+        </script>
     </body>
 </html>
